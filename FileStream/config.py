@@ -27,12 +27,12 @@ class Telegram:
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
 
 class Server:
-    PORT = int(env.get("PORT", 8080))
-    BIND_ADDRESS = str(env.get("galaxy.usbx.me", "0.0.0.0"))
+    PORT = int(env.get("PORT", 8081))
+    BIND_ADDRESS = str(env.get("galaxy.usbx.me"))
     PING_INTERVAL = int(env.get("PING_INTERVAL", "1200"))
     HAS_SSL = str(env.get("HAS_SSL", "0").lower()) in ("1", "true", "t", "yes", "y")
     NO_PORT = str(env.get("NO_PORT", "0").lower()) in ("1", "true", "t", "yes", "y")
-    FQDN = str(env.get("FQDN", BIND_ADDRESS))
+    FQDN = str(env.get("galaxy.usbx.me:8081", BIND_ADDRESS))
     URL = "http{}://{}{}/".format(
         "s" if HAS_SSL else "", FQDN, "" if NO_PORT else ":" + str(PORT)
     )
