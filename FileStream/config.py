@@ -12,10 +12,10 @@ class Telegram:
     OWNER_ID = int(env.get('OWNER_ID', '7011650566'))  # Default to '7011650566' if OWNER_ID is not set
     WORKERS = int(env.get("WORKERS", "6"))  # Default to 6 if WORKERS is not set
     DATABASE_URL = str(env.get('DATABASE_URL', 'mongodb+srv://ashu2626ranjan:9IxsVd6P2kIG6cEa@cluster0ddf566.0mtc8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0ddf566'))  # Default MongoDB URL
-    UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', 'https://t.me/MAPOriginals'))  # Default to @MAPOriginals if not set
+    UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', 'MAPOriginals'))  # Default to @MAPOriginals if not set
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))  # Default to 'FileStream' if not set
     FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)  # Optional environment variable, can be None
-    FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', 'https://t.me/MAPOriginals' 'True')  # Default to 'False' if not set
+    FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', 'MAPOriginals' 'True')  # Default to 'False' if not set
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False  # Convert to boolean
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))  # Default to 60 if not set
     FILE_PIC = env.get('FILE_PIC', "https://t.me/c/1815280589/259940")  # Default image URL
