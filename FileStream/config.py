@@ -26,7 +26,7 @@ class Telegram:
     ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", -1002250712388))  # Default channel ID for user logs
     MODE = env.get("MODE", "primary")  # Default to 'primary' if MODE is not set
     SECONDARY = True if MODE.lower() == "secondary" else False  # Check if it's secondary mode
-    AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "7011650566")).split()))  # List of authorized users, default to OWNER_ID
+    AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))  # List of authorized users, default to OWNER_ID
 
 class Server:
     # Using the provided server info, with updated port
