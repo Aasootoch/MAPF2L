@@ -15,12 +15,12 @@ class Telegram:
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', '@MAPOriginals'))  # Default to @MAPOriginals if not set
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))  # Default to 'FileStream' if not set
     FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)  # Optional environment variable, can be None
-    FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', 'False')  # Default to 'False' if not set
+    FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', '-1001807477865' 'True')  # Default to 'False' if not set
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False  # Convert to boolean
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))  # Default to 60 if not set
-    FILE_PIC = env.get('FILE_PIC', "https://graph.org/file/5bb9935be0229adf98b73.jpg")  # Default image URL
-    START_PIC = env.get('START_PIC', "https://graph.org/file/290af25276fa34fa8f0aa.jpg")  # Default image URL
-    VERIFY_PIC = env.get('VERIFY_PIC', "https://graph.org/file/736e21cc0efa4d8c2a0e4.jpg")  # Default image URL
+    FILE_PIC = env.get('FILE_PIC', "https://t.me/c/1815280589/259940")  # Default image URL
+    START_PIC = env.get('START_PIC', "https://envs.sh/zmS.png")  # Default image URL
+    VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/zmI.png")  # Default image URL
     MULTI_CLIENT = False  # Default is False
     FLOG_CHANNEL = int(env.get("FLOG_CHANNEL", -1002312973003))  # Default channel ID for file logs
     ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", -1002250712388))  # Default channel ID for user logs
