@@ -9,7 +9,7 @@ class Telegram:
     API_ID = int(env.get("API_ID", 22420478))  # Default to 22420478 if not set
     API_HASH = str(env.get("API_HASH", "5938b801d270c81afd3ad8581aba7960"))  # Default to the given value if not set
     BOT_TOKEN = str(env.get("BOT_TOKEN", "7682118799:AAH6itdcGfJKgIXJQXl0hCee2gk-vHMQaSM"))  # Default to the given value
-    OWNER_ID = int(env.get('OWNER_ID', '7011650566'))  # Default to '7011650566' if OWNER_ID is not set
+    OWNER_ID = int(env.get('OWNER_ID', '7808920918'))  # Default to '7011650566' if OWNER_ID is not set
     WORKERS = int(env.get("WORKERS", "6"))  # Default to 6 if WORKERS is not set
     DATABASE_URL = str(env.get('DATABASE_URL', 'mongodb+srv://ashu2626ranjan:9IxsVd6P2kIG6cEa@cluster0ddf566.0mtc8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0ddf566'))  # Default MongoDB URL
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', 'MAPOriginals'))  # Default to @MAPOriginals if not set
